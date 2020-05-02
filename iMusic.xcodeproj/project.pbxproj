@@ -52,13 +52,93 @@
 		4A9A986B245CDD1800366E85 /* iMusic */ = {
 			isa = PBXGroup;
 			children = (
-				4A9A986C245CDD1800366E85 /* AppDelegate.swift */,
-				4A9A986E245CDD1800366E85 /* SceneDelegate.swift */,
-				4A9A9870245CDD1800366E85 /* ViewController.swift */,
-				4A9A9875245CDD1900366E85 /* Assets.xcassets */,
-				4A9A987A245CDD1900366E85 /* Info.plist */,
+				4A9A9895245CF14200366E85 /* Classes */,
+				4A9A989A245CF1EB00366E85 /* Supporting Files */,
+				4A9A9892245CF10B00366E85 /* Resources */,
 			);
 			path = iMusic;
+			sourceTree = "<group>";
+		};
+		4A9A9892245CF10B00366E85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A9894245CF12400366E85 /* Plists */,
+				4A9A9893245CF11A00366E85 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A9A9893245CF11A00366E85 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A9875245CDD1900366E85 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4A9A9894245CF12400366E85 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		4A9A9895245CF14200366E85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A9896245CF15000366E85 /* Application Layer */,
+				4A9A9898245CF17900366E85 /* Presentation Layer */,
+				4A9A9897245CF16700366E85 /* BusinessLogic Layer */,
+				4A9A9899245CF1A900366E85 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A9A9896245CF15000366E85 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A989B245CF26500366E85 /* AppDelegate */,
+				4A9A986E245CDD1800366E85 /* SceneDelegate.swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		4A9A9897245CF16700366E85 /* BusinessLogic Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BusinessLogic Layer";
+			sourceTree = "<group>";
+		};
+		4A9A9898245CF17900366E85 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A9870245CDD1800366E85 /* ViewController.swift */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		4A9A9899245CF1A900366E85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A9A989A245CF1EB00366E85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A987A245CDD1900366E85 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A9A989B245CF26500366E85 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A986C245CDD1800366E85 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6QC233RCB;
-				INFOPLIST_FILE = iMusic/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iMusic/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6QC233RCB;
-				INFOPLIST_FILE = iMusic/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iMusic/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
