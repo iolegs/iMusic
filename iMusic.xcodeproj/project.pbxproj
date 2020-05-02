@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,31 @@
 		4A9A9876245CDD1900366E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A9875245CDD1900366E85 /* Assets.xcassets */; };
 		4A9A989E245CF94400366E85 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A989D245CF94400366E85 /* MainTabBarController.swift */; };
 		4A9A98A0245CFA3F00366E85 /* SearchTemporaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A989F245CFA3F00366E85 /* SearchTemporaryViewController.swift */; };
+		4A9A98A4245CFC7300366E85 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98A3245CFC7300366E85 /* Alamofire */; };
+		4A9A98A7245CFCE500366E85 /* KingfisherStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98A6245CFCE500366E85 /* KingfisherStatic */; };
+		4A9A98A9245CFCE500366E85 /* KingfisherSwiftUIStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98A8245CFCE500366E85 /* KingfisherSwiftUIStatic */; };
+		4A9A98AB245CFCE500366E85 /* KingfisherDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98AA245CFCE500366E85 /* KingfisherDynamic */; };
+		4A9A98AC245CFCE500366E85 /* KingfisherDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98AA245CFCE500366E85 /* KingfisherDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4A9A98AE245CFCE500366E85 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98AD245CFCE500366E85 /* Kingfisher */; };
+		4A9A98B0245CFCE500366E85 /* KingfisherSwiftUIDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98AF245CFCE500366E85 /* KingfisherSwiftUIDynamic */; };
+		4A9A98B1245CFCE500366E85 /* KingfisherSwiftUIDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98AF245CFCE500366E85 /* KingfisherSwiftUIDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4A9A98B3245CFCE500366E85 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9A98B2245CFCE500366E85 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A9A98B4245CFCE500366E85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A9A98B1245CFCE500366E85 /* KingfisherSwiftUIDynamic in Embed Frameworks */,
+				4A9A98AC245CFCE500366E85 /* KingfisherDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A9A9869245CDD1800366E85 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +56,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9A98B0245CFCE500366E85 /* KingfisherSwiftUIDynamic in Frameworks */,
+				4A9A98AB245CFCE500366E85 /* KingfisherDynamic in Frameworks */,
+				4A9A98A7245CFCE500366E85 /* KingfisherStatic in Frameworks */,
+				4A9A98A4245CFC7300366E85 /* Alamofire in Frameworks */,
+				4A9A98A9245CFCE500366E85 /* KingfisherSwiftUIStatic in Frameworks */,
+				4A9A98B3245CFCE500366E85 /* KingfisherSwiftUI in Frameworks */,
+				4A9A98AE245CFCE500366E85 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +198,22 @@
 				4A9A9865245CDD1800366E85 /* Sources */,
 				4A9A9866245CDD1800366E85 /* Frameworks */,
 				4A9A9867245CDD1800366E85 /* Resources */,
+				4A9A98B4245CFCE500366E85 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iMusic;
+			packageProductDependencies = (
+				4A9A98A3245CFC7300366E85 /* Alamofire */,
+				4A9A98A6245CFCE500366E85 /* KingfisherStatic */,
+				4A9A98A8245CFCE500366E85 /* KingfisherSwiftUIStatic */,
+				4A9A98AA245CFCE500366E85 /* KingfisherDynamic */,
+				4A9A98AD245CFCE500366E85 /* Kingfisher */,
+				4A9A98AF245CFCE500366E85 /* KingfisherSwiftUIDynamic */,
+				4A9A98B2245CFCE500366E85 /* KingfisherSwiftUI */,
+			);
 			productName = iMusic;
 			productReference = 4A9A9869245CDD1800366E85 /* iMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +242,10 @@
 				Base,
 			);
 			mainGroup = 4A9A9860245CDD1800366E85;
+			packageReferences = (
+				4A9A98A2245CFC7300366E85 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4A9A986A245CDD1800366E85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,6 +454,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A9A98A2245CFC7300366E85 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A9A98A3245CFC7300366E85 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A2245CFC7300366E85 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4A9A98A6245CFCE500366E85 /* KingfisherStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherStatic;
+		};
+		4A9A98A8245CFCE500366E85 /* KingfisherSwiftUIStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIStatic;
+		};
+		4A9A98AA245CFCE500366E85 /* KingfisherDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherDynamic;
+		};
+		4A9A98AD245CFCE500366E85 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		4A9A98AF245CFCE500366E85 /* KingfisherSwiftUIDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIDynamic;
+		};
+		4A9A98B2245CFCE500366E85 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A9A98A5245CFCE500366E85 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A9A9861245CDD1800366E85 /* Project object */;
 }
